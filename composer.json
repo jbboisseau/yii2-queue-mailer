@@ -1,5 +1,5 @@
 {
-  "name": "yarcode/yii2-queue-mailer",
+  "name": "jbboisseau/yii2-queue-mailer",
   "description": "Queue mailer decorator for Yii2 framework",
   "type": "yii2-extension",
   "keywords": [
@@ -8,18 +8,18 @@
     "mailer",
     "queue"
   ],
-  "homepage": "http://packagist.org/packages/yarcode/yii2-queue-mailer",
+  "homepage": "http://packagist.org/packages/jbboisseau/yii2-queue-mailer",
   "license": "MIT",
   "authors": [
     {
-      "name": "Alexey Samoylov",
-      "email": "alexey.samoylov@gmail.com",
+      "name": "JB Boisseau",
+      "email": "boisseau.jb@gmail.com",
       "role": "Developer"
     }
   ],
   "support": {
-    "issues": "https://github.com/yarcode/yii2-queue-mailer/issues",
-    "source": "https://github.com/yarcode/yii2-queue-mailer"
+    "issues": "https://github.com/jbboisseau/yii2-queue-mailer/issues",
+    "source": "https://github.com/jbboisseau/yii2-queue-mailer"
   },
   "require": {
     "php": ">=5.6",
@@ -42,7 +42,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "YarCode\\Yii2\\QueueMailer\\": "./src"
+      "Jbboisseau\\Yii2\\QueueMailer\\": "./src"
     }
   }
 }
