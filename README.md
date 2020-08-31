@@ -1,11 +1,6 @@
 # Queue mailer decorator for Yii2 framework
 Send your emails in the background using Yii2 queues.
 
-[![Build Status](https://travis-ci.org/yarcode/yii2-queue-mailer.svg?branch=master)](https://travis-ci.org/yarcode/yii2-queue-mailer)
-[![Latest Stable Version](https://poser.pugx.org/yarcode/yii2-queue-mailer/v/stable)](https://packagist.org/packages/yarcode/yii2-queue-mailer)
-[![Total Downloads](https://poser.pugx.org/yarcode/yii2-queue-mailer/downloads)](https://packagist.org/packages/yarcode/yii2-queue-mailer)
-[![License](https://poser.pugx.org/yarcode/yii2-queue-mailer/license)](https://packagist.org/packages/yarcode/yii2-queue-mailer)
-
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
@@ -13,13 +8,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist yarcode/yii2-queue-mailer
+php composer.phar require --prefer-dist jbboisseau/yii2-queue-mailer
 ```
 
 or add
 
 ```json
-"yarcode/yii2-queue-mailer": "*"
+"jbboisseau/yii2-queue-mailer": "*"
 ```
 
 ## Usage
@@ -27,11 +22,11 @@ or add
 Configure `queue` component of your application.
 You can find the details here: https://www.yiiframework.com/extension/yiisoft/yii2-queue
 
-Configure `YarCode\Yii2\QueueMailer\Mailer` as your primary mailer.
+Configure `Jbboisseau\Yii2\QueueMailer\Mailer` as your primary mailer.
 
 ```
   'mailer' => [
-      'class' => \YarCode\Yii2\QueueMailer\Mailer::class,
+      'class' => \Jbboisseau\Yii2\QueueMailer\Mailer::class,
       'syncMailer' => [
           'class' => \yii\swiftmailer\Mailer::class,
           'useFileTransport' => true,
