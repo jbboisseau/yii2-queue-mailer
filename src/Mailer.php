@@ -10,9 +10,10 @@ use yii\base\Component;
 use yii\base\InvalidConfigException;
 use yii\di\Instance;
 use yii\mail\MailerInterface;
+use yii\mail\BaseMailer;
 use yii\queue\Queue;
 
-class Mailer extends Component implements MailerInterface
+class Mailer extends BaseMailer implements MailerInterface
 {
     /** @var string */
     public $id = 'mailer';
@@ -70,6 +71,14 @@ class Mailer extends Component implements MailerInterface
     public function compose($view = null, array $params = [])
     {
         return $this->getSyncMailer()->compose($view, $params);
+    }
+    
+    /**
+     * dummy function for BaseMailer inheritance
+     */
+    public function sendMessage($view = null, array $params = [])
+    {
+        return true;
     }
 
     /**
