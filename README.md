@@ -57,5 +57,5 @@ MIT
     
 ## Links ##
 
-* [GitHub repository](https://github.com/yarcode/yii2-queue-mailer)
-* [Composer package](https://packagist.org/packages/yarcode/yii2-queue-mailer)
+* [GitHub repository](https://github.com/jbboisseau/yii2-queue-mailer)
+* [Composer package](https://packagist.org/packages/jbboisseau/yii2-queue-mailer)
